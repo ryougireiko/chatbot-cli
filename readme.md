@@ -8,7 +8,7 @@
 
 * 多轮对话，自动维护上下文
 * 命令系统（/help可查看所有命令，如/save等）
-* 完整的异常处理（api失效、文件不存在、用户重点）
+* 完整的异常处理（api失效、文件不存在、用户中断）
 
 ## 环境要求
 
@@ -30,7 +30,11 @@ cd chatbot-cli
 pip install openai python-dotenv
 ~~~
 
-3.配置api key：复制‘’.env.example‘’ 为 ‘’.env‘’，填入自己在deepseek官网购买的key替换。DEEPSEEK_API_KEY=sk-你的key
+3.配置API key：复制 `.env.example` 为 `.env`，填入自己在DeepSeek官网申请的key：
+
+```bash
+DEEPSEEK_API_KEY=sk-你的key
+```
 
 4.运行：
 
